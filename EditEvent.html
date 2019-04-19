@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <style>
-
-    </style>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,10 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Impressum</title>
+    <title>Edit Event</title>
 </head>
-<body style="background: antiquewhite">
-<h1>Impressum</h1>
+<body>
+<h1>Edit your TODO</h1>
+
 <div class="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,40 +24,46 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Add</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Impressum<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Impressum</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
 
-<div>
-    <p>
-        XY ist ein Service von N&amp;M Crop Limited.<br>
-        Zu technischen Fragen wenden Sie Sich bitte an info@nmcorp.tu-berlin.de.</p>
-    <p>Impressum gem. §6 TDG und §10 Mediendienstestaatsvertrag</p>
 
-    <p>N&amp;M Corp<br>
-        Der Präsident<br>
-        Straße des 17. Juni 135<br>
-        10623 Berlin
-    </p>
-    <p>Telefon: +49 30 314452</p>
-    <p>E-Mail: nmcorp@tu-berlin.de</p>
-</div>
+<form>
+    <div class="form-group">
+        <label type="text">Description</label>
+        <input class="form-control" type="text" placeholder="Catch train to busan" readonly>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label type="text">Priority</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="col">
+            <label type="text">Deadline</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label type="text">More information</label>
+    </div>
+</form>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="Hello,%20world!-Dateien/jquery-3.js"
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="Hello,%20world!-Dateien/popper.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<script src="Hello,%20world!-Dateien/bootstrap.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 </body>
 </html>
