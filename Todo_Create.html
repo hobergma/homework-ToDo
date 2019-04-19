@@ -8,8 +8,7 @@
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>.form-control{
-    background-color: aqua;
-    max-width: 500px;
+    max-width: available;
 } </style>
 
     <title>Add TODO</title>
@@ -28,31 +27,25 @@
     <div class="input-group-prepend">
         <span class="input-group-text" id="priority">Priority</span>
     </div>
-    <input type="text" class="form-control" aria-label="Priority" >
+    <input maxlength="1" type="text" class="form-control" aria-label="Priority" >
+
     <div class="input-group-prepend">
         <span class="input-group-text" id="deadline">Deadline</span>
     </div>
-    <input type="text" class="form-control" aria-label="Deadline" aria-describedby="basic-addon1">
+    <input maxlength="12" type="text" class="form-control" aria-label="Deadline" aria-describedby="basic-addon1">
     <div class="input-group-prepend">
         <span class="input-group-text" id="progress">Progress</span>
     </div>
-    <input type="text" class="form-control" aria-label="" aria-describedby="basic-addon1">
+    <input maxlength="6" type="text" class="form-control" aria-label="" aria-describedby="basic-addon1">
 </div>
-
-<div class="input-group mb-3">
+<div class="input-group">
     <div class="input-group-prepend">
-        <span class="input-group-text" id="description">Description</span>
+        <span class="input-group-text">With textarea</span>
     </div>
-    <input type="text" class="form-control" aria-label="Descritiption here" aria-describedby="basic-addon1">
+    <textarea maxlength="160" class="form-control" aria-label="With textarea"></textarea>
 </div>
+<button type="button" class="btn btn-outline-primary">Add</button>
 
-<div class="input-group mb-3">
-
-</div>
-
-<div class="input-group mb-3">
-
-</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
