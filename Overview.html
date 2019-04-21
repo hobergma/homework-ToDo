@@ -4,10 +4,24 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <style>
         .table {
+
         }
 
-        .nav-bar {
+        .content {
+            background: blanchedalmond;
+            text-align: center;
+        }
 
+        .header {
+
+        }
+
+        #navbarSupportedContent {
+            text-align: center;
+        }
+
+        .container{
+            vertical-align: middle;
         }
 
     </style>
@@ -20,26 +34,36 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Overview</title>
+
 </head>
-<body style="background: antiquewhite">
-<h1>Hello there, this is your TODO list</h1>
-<div class="nav-bar">
+<body class="content">
+
+<h1 class="header">TODO-List</h1>
+
+<div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Overview<span class="sr-only">(current)</span></a>
+                <li class="nav-item active" style="padding-top: 2%">
+                    <a class="nav-link" href="#">Overview</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Add</a>
+                    <a class="nav-link" href="#" style="padding-top: 2%">Impressum</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Impressum</a>
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-success">Add</button>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
+
 
 <div class="todos">
     <table class="table table-borderless">
@@ -99,16 +123,6 @@
             <td>
                 <button type="button" class="btn btn-outline-primary">Edit</button>
                 <button type="button" class="btn btn-outline-danger">Delete</button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <table class="add">
-        <tbody>
-        <tr>
-            <td></td>
-            <td>
-                <button type="button" class="btn btn-success" style="width: 200%">Add</button>
             </td>
         </tr>
         </tbody>
