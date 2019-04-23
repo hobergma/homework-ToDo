@@ -58,7 +58,7 @@
                     <a class="nav-link" href="Impressum.html">Impressum</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="AddEvent.html">
                         <button type="button" class="btn btn-success">Add</button>
                     </a>
                 </li>
@@ -69,20 +69,20 @@
     <form class="add_Todo" style="padding-top: 3mm">
         <div>
             <label>Add your Todo decription here </label>
-            <textarea maxlength="160" rows="4" class="form-control" aria-label="With textarea"></textarea>
+            <textarea maxlength="160" rows="4" class="form-control" ></textarea>
         </div>
         <div class="row">
-            <div class="col" id="priority">
+            <div class="col" id="priority" >
                 <label>Priority</label>
-                <input class="form-control"/>
+                <input class="form-control"maxlength="1"/>
             </div>
             <div class="col" id="deadline">
                 <label>Deadline</label>
                 <input class="form-control" type="date"/>
             </div>
             <div class="col">
-                <label for="prio">Progress</label>
-                <div class="input-group mb-2" id="prio">
+                <label for="progress">Progress</label>
+                <div class="input-group mb-2" id="progress" >
                     <div class="input-group-prepend">
                         <div class="input-group-text">%</div>
                     </div>
@@ -91,7 +91,7 @@
             </div>
         </div>
         <div id="btn_add">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Add</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
         </div>
     </form>
 </div>
