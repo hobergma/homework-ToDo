@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,21 +19,56 @@
 
         body {
             text-align: center;
-            background-color: cornflowerblue;
+            background-color: #fff8f0;
         }
+
+        .container-fluid {
+            text-align: left;
+        }
+
+        .navbar-expand-lg {
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
     </style>
 
-
     <title>Add TODO</title>
+
 </head>
 <body>
-<h1>Todo List</h1>
+
+<h2>TODO-List</h2>
+<h5>Add</h5>
 
 <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" style="padding-top: 3%">
+                    <a class="nav-link" href="Overview.html">Overview</a>
+                </li>
+                <li class="nav-item" style="padding-top: 3%">
+                    <a class="nav-link" href="Impressum.html">Impressum</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-success">Add</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <form class="add_Todo">
+    <form class="add_Todo" style="padding-top: 3mm">
         <div>
-            <label>Add your Todo decription here: </label>
+            <label>Add your Todo decription here </label>
             <textarea maxlength="160" rows="4" class="form-control" aria-label="With textarea"></textarea>
         </div>
         <div class="row">
@@ -45,22 +80,21 @@
                 <label>Deadline</label>
                 <input class="form-control" type="date"/>
             </div>
-            <div class="col" id="progress">
-                <label>Progress</label>
-                <input class="form-control" maxlength="3"/>
+            <div class="col">
+                <label for="prio">Progress</label>
+                <div class="input-group mb-2" id="prio">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">%</div>
+                    </div>
+                    <input type="text" class="form-control" maxlength="3">
+                </div>
             </div>
-
         </div>
-
         <div id="btn_add">
             <button type="button" class="btn btn-primary btn-lg btn-block">Add</button>
         </div>
-
-
     </form>
-
 </div>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
