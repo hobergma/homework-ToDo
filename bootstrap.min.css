@@ -10172,12 +10172,16 @@ a.text-dark:focus, a.text-dark:hover {
     line-height: 1.5;
     border-radius: 2rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+
 }
+.btn-curved:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff
+}
+
 .navbar-expand-lg {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+ border-radius: 2rem;
 }
 
 body {
