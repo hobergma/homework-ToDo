@@ -10153,6 +10153,9 @@ a.text-dark:focus, a.text-dark:hover {
     }
 }
 
+/*# sourceMappingURL=bootstrap.min.css.map */
+
+
 /* ################### Malte Hoberg und Niklas Wiedersich additions ####################################### */
 
 .btn-curved {
@@ -10174,6 +10177,7 @@ a.text-dark:focus, a.text-dark:hover {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 
 }
+
 .btn-curved:hover {
     color: #fff;
     background-color: #007bff;
@@ -10181,7 +10185,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .navbar-expand-lg {
- border-radius: 2rem;
+    border-radius: 2rem;
 }
 
 body {
@@ -10189,9 +10193,12 @@ body {
     background-color: #fff8f0;
 }
 
+#nav-impressum {
+    padding-top: 3.5%;
+}
+
+#nav-overview {
+    padding-top: 3.5%;
+}
 
 
-
-
-
-/*# sourceMappingURL=bootstrap.min.css.map */
